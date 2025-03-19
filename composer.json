@@ -11,7 +11,7 @@
             "Gump\\HyperfUtils\\": "src/"
         },
         "files": [
-            "src/functions.php.php"
+            "src/functions.php"
         ]
     },
     "authors": [
