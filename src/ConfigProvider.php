@@ -13,6 +13,7 @@ declare(strict_types=1);
 namespace Gump\HyperfUtils;
 
 use Gump\HyperfUtils\Replace\Cache;
+use Hyperf\Di\Definition\PriorityDefinition;
 use Psr\SimpleCache\CacheInterface;
 
 class ConfigProvider
@@ -22,7 +23,7 @@ class ConfigProvider
         return [
             // 合并到  config/autoload/dependencies.php 文件
             'dependencies' => [
-                CacheInterface::class => Cache::class,
+                CacheInterface::class => new PriorityDefinition(Cache::class, 1),
             ],
             // 合并到  config/autoload/annotations.php 文件
             'annotations' => [
