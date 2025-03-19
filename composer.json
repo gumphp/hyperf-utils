@@ -22,7 +22,7 @@
     ],
     "minimum-stability": "dev",
     "extra": {
-        "hyperf-utils": {
+        "hyperf": {
             "config": "Gump\\HyperfUtils\\ConfigProvider"
         }
     }
