@@ -17,5 +17,10 @@
             "email": "18814515@qq.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "hyperf-utils": {
+            "config": "Gump\\HyperfUtils\\ConfigProvider"
+        }
+    }
 }
